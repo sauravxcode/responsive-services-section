@@ -1,0 +1,117 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Global reset and font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Body background color */
+body{
+    background-color: rgb(219, 235, 255);
+}
+
+/* Container for service items */
+.service_container{
+    width: 80%; /* Initial width for larger screens */
+    height: 100vh;
+    padding: 0 8%;
+    margin: 0 auto;
+}
+
+/* Media queries for adjusting container width based on screen size */
+@media screen and (max-width: 1200px) {
+    .service_container {
+        width: 90%; /* Decrease width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service_container {
+        width: 95%; /* Further decrease width for medium-sized screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service_container {
+        width: 100%; /* Full width for small screens (e.g., tablets) */
+    }
+}
+
+/* Main heading styles */
+.service_container h1{
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Heading underline */
+.service_container h1::after{
+    content: '';
+    background: #0075FF;
+    width: 180px;
+    border-radius: 10px;
+    height: 5px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Grid layout for service items */
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+/* Icon styles */
+.service i{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #0075FF;
+}
+
+/* Service title styles */
+.service h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Service description styles */
+.service p{
+    padding: 5px 5%;
+}
+
+/* Service item styles */
+.service {
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    padding: 25px 10px;
+    box-shadow: 0px 0px 10px hsla(212, 100%, 50%, 0.124);
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ffffff;
+    transition: transform 0.5s, background 0.5s;
+}
+
+/* Hover effect for service items */
+.service:hover {
+    background: #0075FF;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Hover effect for icons */
+.service:hover i{
+    color: #fff;
+}
