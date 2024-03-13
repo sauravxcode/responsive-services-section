@@ -1,7 +1,7 @@
 # Responsive Service Section
 
 ## Description
-This project is a responsive service section designed using HTML, CSS. It showcases various services along with their descriptions.
+This project is a responsive service section designed using HTML and CSS. It showcases various services along with their descriptions.
 
 ## Features
 - Responsive Design: Ensures optimal viewing experience across different devices.
